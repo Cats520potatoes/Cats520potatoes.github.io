@@ -74,10 +74,12 @@ cv:
 
     Research Outputs:
       - bullet: 发表或参与多篇机器人方向论文，覆盖 IROS、RAL、ISoIRS、CIAC、IJONAAOE、OE 等会议和期刊。
-      - bullet: 《Stability Enhancement in Variable Morphing Multi-body AUVs for Underwater Structure Maintenance》IROS 共一（与导师）。
-      - bullet: 《Modeling and Simulation of Horizontal Rotational ... under Varied Thrust Configurations》ISoIRS 独立一作。
-      - bullet: 《Analysis of a Passive-fin-Assisted Propulsion Mechanism Based on an Undulation Robot》CIAC 共一。
-      - bullet: 《Morphological Modulation Enables Adaptive ... Symmetric Impulse-Driven Robots》RAL 三作。
+      - bullet: 《Stability Enhancement in Variable Morphing Multi-body AUVs for Underwater Structure Maintenance》发表于 IROS 2025。
+      - bullet: 《Modeling and Simulation of Horizontal Rotational Movements for a Tandem Multibody AUV Under Varied Thrust Configurations》发表于 ISoIRS 2024。
+      - bullet: 《Developing a Pseudo-Rigid-Body Dynamics Model for Pneumatic Serpentine Robots》发表于 ISoIRS 2024。
+      - bullet: 《A Simple Sand-Skier with Internal Excitation》发表于 ISoIRS 2024。
+      - bullet: 《Analysis of a Passive-Fin-Assisted Propulsion Mechanism Based on an Undulation Robot》发表于 CIAC 2025 论文集。
+      - bullet: 《Morphological Modulation Enables Adaptive Locomotion in Symmetric Impulse-Driven Robots》发表于 IEEE Robotics and Automation Letters。
 
     Technical Skills:
       - label: 机器人算法与控制
