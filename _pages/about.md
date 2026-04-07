@@ -9,10 +9,35 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>北京化工大学｜控制科学与工程</p>
-    <p>北京朝阳</p>
-    <p>18334579906</p>
-    <p>18334579906@163.com</p>
+    <div class="profile-info-shell">
+      <div class="profile-info-badge">M.S. Candidate · Embodied AI & Robotics</div>
+      <div class="profile-info-list">
+        <div class="profile-info-item">
+          <span class="profile-info-label">学校</span>
+          <span class="profile-info-value">北京化工大学</span>
+        </div>
+        <div class="profile-info-item">
+          <span class="profile-info-label">方向</span>
+          <span class="profile-info-value">控制科学与工程</span>
+        </div>
+        <div class="profile-info-item">
+          <span class="profile-info-label">地址</span>
+          <span class="profile-info-value">北京朝阳</span>
+        </div>
+        <div class="profile-info-item">
+          <span class="profile-info-label">电话</span>
+          <span class="profile-info-value">18334579906</span>
+        </div>
+        <div class="profile-info-item">
+          <span class="profile-info-label">邮箱</span>
+          <a class="profile-info-value" href="mailto:18334579906@163.com">18334579906@163.com</a>
+        </div>
+        <div class="profile-info-item">
+          <span class="profile-info-label">GitHub</span>
+          <a class="profile-info-value" href="https://github.com/Cats520potatoes">Cats520potatoes</a>
+        </div>
+      </div>
+    </div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -34,6 +59,35 @@ latest_posts:
   <p class="home-hero-lead">
     围绕灵巧手重定向、机器人动力学、运动控制和嵌入式系统，我持续在做从建模仿真、算法实现到电控联调和实机验证的完整链路工作。
   </p>
+</div>
+
+<div class="home-featured-grid">
+  <article class="home-featured-card home-featured-accent">
+    <span class="home-featured-type">Representative Paper</span>
+    <h3>代表论文</h3>
+    <p class="home-featured-title">
+      Stability Enhancement in Variable Morphing Multi-body AUVs for Underwater Structure Maintenance
+    </p>
+    <p>
+      该工作发表于 IROS 2025，聚焦可变构型多体 AUV 的稳定性增强，能够直接体现我在水下机器人动力学建模与控制方向上的研究积累。
+    </p>
+    <div class="home-featured-links">
+      <a href="https://doi.org/10.1109/IROS60139.2025.11247455">查看 DOI</a>
+      <a href="{{ '/publications/' | relative_url }}">浏览全部论文</a>
+    </div>
+  </article>
+  <article class="home-featured-card">
+    <span class="home-featured-type">Representative Project</span>
+    <h3>代表项目</h3>
+    <p class="home-featured-title">面向真实部署的灵巧手重定向与 Tea Box 抓取任务</p>
+    <p>
+      这一方向围绕“视频提取 - 仿真重定向 - 实物部署”形成完整链路，并结合 IK 求解与具体抓取任务，集中体现我在跨具身动作映射和系统落地上的能力。
+    </p>
+    <div class="home-featured-links">
+      <a href="{{ '/projects/' | relative_url }}#{{ '具身智能与操作演示' | slugify }}">查看项目视频</a>
+      <a href="{{ '/projects/' | relative_url }}">浏览全部项目</a>
+    </div>
+  </article>
 </div>
 
 <div class="home-metric-grid">
@@ -94,6 +148,61 @@ latest_posts:
 如果你希望快速判断我的能力边界，建议先看 [项目展示]({{ '/projects/' | relative_url }})，那里集中放了最能反映系统能力的视频和项目说明；再看 [论文成果]({{ '/publications/' | relative_url }}) 和 [荣誉与证书]({{ '/honors/' | relative_url }})；如果你需要一页式概览，可以直接查看 [简历页面]({{ '/cv/' | relative_url }})。
 
 <style>
+  .profile .more-info {
+    margin-top: 0.85rem;
+    font-family: inherit;
+  }
+
+  .profile .more-info p {
+    display: block;
+  }
+
+  .profile-info-shell {
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 247, 241, 0.98));
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  }
+
+  .profile-info-badge {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.85rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(47, 125, 50, 0.12);
+    color: #1f5e26;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .profile-info-list {
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .profile-info-item {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 0.7rem;
+    align-items: start;
+  }
+
+  .profile-info-label {
+    color: #6c757d;
+    font-size: 0.84rem;
+  }
+
+  .profile-info-value {
+    color: inherit;
+    font-size: 0.93rem;
+    line-height: 1.5;
+    word-break: break-word;
+    text-decoration: none;
+  }
+
   .home-hero-panel {
     margin: 0.25rem 0 1.3rem;
     padding: 1.15rem 1.2rem;
@@ -120,6 +229,67 @@ latest_posts:
   .home-hero-lead {
     margin-bottom: 0;
     font-size: 1.02rem;
+  }
+
+  .home-featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.1rem 0 1.3rem;
+  }
+
+  .home-featured-card {
+    padding: 1.05rem 1.1rem;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  }
+
+  .home-featured-accent {
+    background: linear-gradient(135deg, rgba(47, 125, 50, 0.1), rgba(255, 255, 255, 0.96));
+  }
+
+  .home-featured-type {
+    display: inline-flex;
+    margin-bottom: 0.65rem;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.05);
+    color: #495057;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .home-featured-card h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+  }
+
+  .home-featured-title {
+    margin-bottom: 0.55rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .home-featured-card p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .home-featured-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.85rem;
+  }
+
+  .home-featured-links a {
+    color: #1f5e26;
+    text-decoration: none;
+    font-weight: 600;
   }
 
   .home-metric-grid {
@@ -198,6 +368,7 @@ latest_posts:
   }
 
   @media (max-width: 768px) {
+    .home-featured-grid,
     .home-metric-grid,
     .home-focus-grid {
       grid-template-columns: 1fr;
