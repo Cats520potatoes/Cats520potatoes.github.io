@@ -1,70 +1,168 @@
 sections:
   - title: 具身智能与操作演示
-    description: 这一组主要展示我在模仿学习复现、抓取任务执行和灵巧手重定向方向上的实践内容。
+    description: 这一组主要展示我在模仿学习复现、抓取任务执行和灵巧手重定向方向上的实践内容，重点关注“视频演示到机器人动作”的闭环。
     items:
       - title: LeRobot 复现
         path: /assets/video/showcase/lerobot-reproduction.mp4
         role: 具身智能 / 开源框架复现
         summary: 基于公开方案完成操作任务链路复现，用于验证抓取与操作流程的可行性。
+        details:
+          - 以现有开源框架为基础完成训练与部署流程对齐。
+          - 用于快速验证策略迁移、操作链路和实验环境配置。
         tags: [LeRobot, Manipulation, Reproduction]
       - title: 抓取 Demo
         path: /assets/video/showcase/grasp-demo-1.mp4
         role: 机械臂抓取
         summary: 展示桌面场景下的目标抓取过程，体现基础操作流程和轨迹执行效果。
+        details:
+          - 以单次抓取任务为主，突出目标识别到执行的连续性。
+          - 用于验证末端轨迹规划和实际执行稳定性。
         tags: [Grasping, Manipulator, Demo]
       - title: 抓取任务 Demo
         path: /assets/video/showcase/grasp-task-demo-2.mp4
         role: 任务执行演示
         summary: 面向完整抓取任务的执行视频，用于展示端到端任务流程的稳定性。
+        details:
+          - 任务链路较完整，适合展示系统级联调结果。
+          - 重点体现机器人操作流程的连贯性和鲁棒性。
         tags: [Task Execution, Grasping, Robotics]
+      - title: 抓取任务扩展示例
+        path: /assets/video/showcase/grasp-task-demo-3.mp4
+        role: 任务执行演示
+        summary: 作为第二组抓取任务视频，用于补充不同目标和不同执行条件下的动作表现。
+        details:
+          - 用于对比不同场景下的动作生成与执行状态。
+          - 展示面向具体任务目标的稳定抓取效果。
+        tags: [Manipulation, Task Demo, Embodied AI]
+      - title: 灵巧手重定向 Cat 任务
+        path: /assets/video/showcase/dexterous-hand-retarget-cat.mp4
+        role: 灵巧手重定向
+        summary: 展示将演示动作映射到灵巧手执行端后的抓取动作片段。
+        details:
+          - 重点观察动作语义与手部姿态的一致性。
+          - 用于验证轻量级任务上的重定向可行性。
+        tags: [Retargeting, Dexterous Hand, Task Clip]
+      - title: 灵巧手重定向 Coke 任务
+        path: /assets/video/showcase/dexterous-hand-retarget-coke.mp4
+        role: 灵巧手重定向
+        summary: 面向不同物体的灵巧手操作片段，用于补充重定向在异构目标上的表现。
+        details:
+          - 展示不同物体尺寸和几何条件下的动作适应效果。
+          - 用于观察重定向策略在具体抓取任务中的泛化能力。
+        tags: [Dexterous Hand, Generalization, Retargeting]
+      - title: 灵巧手重定向 Tea Box IK
+        path: /assets/video/showcase/dexterous-hand-retarget-tea-ik.mp4
+        role: 重定向 / IK 验证
+        summary: 以茶叶盒任务为例，展示结合逆运动学求解后的动作落地过程。
+        details:
+          - 关注从目标姿态到执行姿态的映射质量。
+          - 用于验证求解器与灵巧手动作执行链路的一致性。
+        tags: [IK, Retargeting, Dexterous Hand]
       - title: 灵巧手重定向对比
         path: /assets/video/showcase/dexterous-hand-retarget-tea-comparison.mp4
         role: 跨具身重定向
         summary: 展示从人手动作到机器人灵巧手执行的对比效果，突出重定向质量与动作一致性。
+        details:
+          - 对比演示动作与机器人动作之间的姿态和节奏对应关系。
+          - 是当前项目页里最能说明重定向思路的一条视频。
         tags: [Retargeting, Dexterous Hand, Embodied AI]
+
+  - title: 运动学与算法验证
+    description: 这一组更偏向基础算法和求解验证，用来展示我在运动学、逆解和系统建模方面的工程实现能力。
+    items:
+      - title: 机械臂运动学逆解
+        path: /assets/video/showcase/manipulator-ik.mp4
+        role: 运动学求解
+        summary: 展示机械臂逆运动学求解与轨迹跟踪过程，是控制与执行链路中的基础能力验证。
+        details:
+          - 关注目标位姿到关节解的稳定映射。
+          - 用于支撑后续抓取、操作和任务规划模块。
+        tags: [Manipulator, Inverse Kinematics, Control]
+      - title: 灵巧手运动学逆解
+        path: /assets/video/showcase/dexterous-hand-ik.mp4
+        role: 灵巧手求解
+        summary: 展示灵巧手运动学逆解过程，为跨具身重定向与实际抓取动作提供底层支撑。
+        details:
+          - 重点在高自由度手部结构下的姿态求解。
+          - 是重定向任务能否稳定落地的重要基础模块。
+        tags: [Retargeting, Dexterous Hand, Embodied AI]
+
   - title: 水下与链式机器人
-    description: 这一组集中展示我参与的链式机器人、水下机器人与复杂地形运动相关项目。
+    description: 这一组集中展示我参与的链式机器人、水下机器人与复杂地形运动相关项目，体现机器人动力学建模与实机控制结合的工作方式。
     items:
       - title: 水下机器人巡航
         path: /assets/video/showcase/underwater-robot-cruise.mp4
         role: 水下机器人控制
         summary: 展示水下平台的稳定巡航效果，对应机器人动力学建模与控制方向实践。
+        details:
+          - 与我的水下多体系统建模和控制方向研究直接相关。
+          - 重点展示平台稳定性与连续巡航效果。
         tags: [AUV, Dynamics, Control]
       - title: 链式机器人沙漠地形
         path: /assets/video/showcase/chain-robot-desert.mp4
         role: 特种机器人
         summary: 展示链式机器人在沙漠环境下的运动能力，用于验证复杂地形适应性。
+        details:
+          - 关注机构形态、控制策略与环境之间的耦合表现。
+          - 用于验证链式机器人在松软地面上的通过能力。
         tags: [Chain Robot, Terrain Adaptation, Locomotion]
       - title: 链式机器人石砾地形
         path: /assets/video/showcase/chain-robot-gravel.mp4
         role: 特种机器人
         summary: 展示链式机器人在石砾地形中的通过效果，体现运动控制和机构设计协同。
+        details:
+          - 更强调非平整支撑条件下的运动稳定性。
+          - 体现项目从机构验证到控制验证的完整链路。
         tags: [Chain Robot, Gravel Terrain, Control]
+
   - title: 嵌入式与竞赛原型
-    description: 这一组以竞赛和原型开发为主，覆盖服务机器人、电赛题目和嵌入式装置实现。
+    description: 这一组以竞赛和原型开发为主，覆盖服务机器人、电赛题目和嵌入式装置实现，体现我在短周期原型落地中的执行能力。
     items:
       - title: 家庭服务机器人接待演示
         path: /assets/video/showcase/robocup-home-service-robot.mp4
         role: RoboCup 项目
         summary: 基于家庭服务场景的接待机器人演示，对应 RoboCup 相关实践内容。
+        details:
+          - 面向服务机器人场景的综合系统演示。
+          - 体现竞赛环境下功能联调和任务组织能力。
         tags: [RoboCup, Service Robot, Competition]
       - title: 2022 电赛倒车入库
         path: /assets/video/showcase/nuedc-2022-auto-parking.mp4
         role: 电子设计竞赛
         summary: 展示倒车入库任务执行效果，体现控制算法与系统调试能力。
+        details:
+          - 强调路径控制、状态判断与执行精度。
+          - 是典型的嵌入式感知与控制结合项目。
         tags: [NUEDC, Embedded, Control]
       - title: 2023 电赛二自由度激光云台
         path: /assets/video/showcase/nuedc-2023-laser-gimbal.mp4
         role: 电子设计竞赛
         summary: 展示二自由度激光云台系统的控制与指向效果，突出机电协同实现。
+        details:
+          - 体现目标指向控制、机构联动和系统调参过程。
+          - 偏向实时控制与硬件实现结合。
         tags: [NUEDC, Gimbal, Embedded]
       - title: 2024 电赛循迹追踪小车
         path: /assets/video/showcase/nuedc-2024-line-tracking-car.mp4
         role: 电子设计竞赛
         summary: 展示小车循迹与路径跟踪过程，体现嵌入式控制与传感融合能力。
+        details:
+          - 强调传感器信息处理与小车控制策略协同。
+          - 用于展示移动平台上的闭环控制实现。
         tags: [NUEDC, Mobile Robot, Embedded]
+      - title: 远程喂猫装置
+        path: /assets/video/showcase/remote-cat-feeder.mp4
+        role: 嵌入式原型
+        summary: 一个偏生活化的嵌入式装置原型，用于展示从硬件控制到交互效果的完整实现。
+        details:
+          - 属于面向真实需求的小型系统设计与开发。
+          - 体现快速搭建可运行原型的能力。
+        tags: [Embedded System, Prototype, IoT]
       - title: 文创旋转灯
         path: /assets/video/showcase/creative-rotating-lamp.mp4
         role: 原型设计
         summary: 展示小型原型装置的结构与控制联动效果，体现动手实现与系统集成能力。
+        details:
+          - 偏向轻量级交互装置和结构控制联动设计。
+          - 用于体现工程实现之外的原型创意能力。
         tags: [Prototype, Embedded, Design]
