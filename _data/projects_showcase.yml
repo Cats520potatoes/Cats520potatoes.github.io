@@ -1,0 +1,70 @@
+sections:
+  - title: 具身智能与操作演示
+    description: 这一组主要展示我在模仿学习复现、抓取任务执行和灵巧手重定向方向上的实践内容。
+    items:
+      - title: LeRobot 复现
+        path: /assets/video/showcase/lerobot-reproduction.mp4
+        role: 具身智能 / 开源框架复现
+        summary: 基于公开方案完成操作任务链路复现，用于验证抓取与操作流程的可行性。
+        tags: [LeRobot, Manipulation, Reproduction]
+      - title: 抓取 Demo
+        path: /assets/video/showcase/grasp-demo-1.mp4
+        role: 机械臂抓取
+        summary: 展示桌面场景下的目标抓取过程，体现基础操作流程和轨迹执行效果。
+        tags: [Grasping, Manipulator, Demo]
+      - title: 抓取任务 Demo
+        path: /assets/video/showcase/grasp-task-demo-2.mp4
+        role: 任务执行演示
+        summary: 面向完整抓取任务的执行视频，用于展示端到端任务流程的稳定性。
+        tags: [Task Execution, Grasping, Robotics]
+      - title: 灵巧手重定向对比
+        path: /assets/video/showcase/dexterous-hand-retarget-tea-comparison.mp4
+        role: 跨具身重定向
+        summary: 展示从人手动作到机器人灵巧手执行的对比效果，突出重定向质量与动作一致性。
+        tags: [Retargeting, Dexterous Hand, Embodied AI]
+  - title: 水下与链式机器人
+    description: 这一组集中展示我参与的链式机器人、水下机器人与复杂地形运动相关项目。
+    items:
+      - title: 水下机器人巡航
+        path: /assets/video/showcase/underwater-robot-cruise.mp4
+        role: 水下机器人控制
+        summary: 展示水下平台的稳定巡航效果，对应机器人动力学建模与控制方向实践。
+        tags: [AUV, Dynamics, Control]
+      - title: 链式机器人沙漠地形
+        path: /assets/video/showcase/chain-robot-desert.mp4
+        role: 特种机器人
+        summary: 展示链式机器人在沙漠环境下的运动能力，用于验证复杂地形适应性。
+        tags: [Chain Robot, Terrain Adaptation, Locomotion]
+      - title: 链式机器人石砾地形
+        path: /assets/video/showcase/chain-robot-gravel.mp4
+        role: 特种机器人
+        summary: 展示链式机器人在石砾地形中的通过效果，体现运动控制和机构设计协同。
+        tags: [Chain Robot, Gravel Terrain, Control]
+  - title: 嵌入式与竞赛原型
+    description: 这一组以竞赛和原型开发为主，覆盖服务机器人、电赛题目和嵌入式装置实现。
+    items:
+      - title: 家庭服务机器人接待演示
+        path: /assets/video/showcase/robocup-home-service-robot.mp4
+        role: RoboCup 项目
+        summary: 基于家庭服务场景的接待机器人演示，对应 RoboCup 相关实践内容。
+        tags: [RoboCup, Service Robot, Competition]
+      - title: 2022 电赛倒车入库
+        path: /assets/video/showcase/nuedc-2022-auto-parking.mp4
+        role: 电子设计竞赛
+        summary: 展示倒车入库任务执行效果，体现控制算法与系统调试能力。
+        tags: [NUEDC, Embedded, Control]
+      - title: 2023 电赛二自由度激光云台
+        path: /assets/video/showcase/nuedc-2023-laser-gimbal.mp4
+        role: 电子设计竞赛
+        summary: 展示二自由度激光云台系统的控制与指向效果，突出机电协同实现。
+        tags: [NUEDC, Gimbal, Embedded]
+      - title: 2024 电赛循迹追踪小车
+        path: /assets/video/showcase/nuedc-2024-line-tracking-car.mp4
+        role: 电子设计竞赛
+        summary: 展示小车循迹与路径跟踪过程，体现嵌入式控制与传感融合能力。
+        tags: [NUEDC, Mobile Robot, Embedded]
+      - title: 文创旋转灯
+        path: /assets/video/showcase/creative-rotating-lamp.mp4
+        role: 原型设计
+        summary: 展示小型原型装置的结构与控制联动效果，体现动手实现与系统集成能力。
+        tags: [Prototype, Embedded, Design]

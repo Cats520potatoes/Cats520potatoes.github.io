@@ -1,0 +1,95 @@
+sections:
+  - title: 重点竞赛奖项
+    description: 这一部分收录具有代表性的国家级、省市级竞赛成果与相关证书。
+    items:
+      - title: 中国机器人大赛暨 RoboCup 机器人世界杯中国赛一等奖
+        year: 2022
+        kind: image
+        path: /assets/img/honors/robocup-2022-national-first.png
+        summary: 机器人竞赛代表性获奖之一，体现服务机器人方向的系统实现能力。
+      - title: 中国国际“互联网+”大学生创新创业大赛北京赛区一等奖
+        year: 2022
+        kind: image
+        path: /assets/img/honors/internet-plus-2022-beijing-first.png
+        summary: 围绕项目方案、实现与展示获得的创新创业竞赛奖项。
+      - title: 全国大学生电子设计竞赛国家级二等奖
+        year: 2023
+        kind: image
+        path: /assets/img/honors/nuedc-2023-national-second.jpg
+        summary: 电子设计与嵌入式系统方向的重要竞赛成果。
+      - title: 北京市大学生电子设计竞赛一等奖
+        year: 2024
+        kind: image
+        path: /assets/img/honors/beijing-edc-2024-first.png
+        summary: 面向电控、嵌入式与系统联调能力的代表性获奖。
+      - title: 中国机器人及人工智能大赛国家级二等奖
+        year: 2024
+        kind: pdf
+        path: /assets/pdf/honors/craic-2024-national-second.pdf
+        summary: 机器人与人工智能方向竞赛获奖证明。
+      - title: “华数杯”全国大学生数学建模大赛研究生组三等奖
+        year: 2025
+        kind: image
+        path: /assets/img/honors/huashu-2025-grad-third.png
+        summary: 体现建模分析与问题抽象能力的竞赛成果。
+      - title: 全国大学生嵌入式芯片与系统设计竞赛北部赛区三等奖
+        year: 2025
+        kind: image
+        path: /assets/img/honors/embedded-chip-2025-north-third.png
+        summary: 面向芯片应用与嵌入式系统实现的区域竞赛获奖。
+  - title: 蓝桥杯系列奖项
+    description: 连续多年参加蓝桥杯嵌入式相关赛项，形成了较稳定的竞赛输出。
+    items:
+      - title: 蓝桥杯嵌入式北京市一等奖
+        year: 2023
+        kind: image
+        path: /assets/img/honors/lanqiao-2023-beijing-first.jpg
+        summary: 2023 年北京市赛区一等奖。
+      - title: 蓝桥杯嵌入式国家级三等奖
+        year: 2023
+        kind: image
+        path: /assets/img/honors/lanqiao-2023-national-third.jpg
+        summary: 2023 年国赛获奖证书。
+      - title: 蓝桥杯嵌入式北京市一等奖
+        year: 2024
+        kind: image
+        path: /assets/img/honors/lanqiao-2024-beijing-first.jpg
+        summary: 2024 年北京市赛区一等奖。
+      - title: 蓝桥杯嵌入式国家级三等奖
+        year: 2024
+        kind: image
+        path: /assets/img/honors/lanqiao-2024-national-third.jpg
+        summary: 2024 年国赛获奖证书。
+      - title: 蓝桥杯嵌入式北京市一等奖
+        year: 2025
+        kind: image
+        path: /assets/img/honors/lanqiao-2025-beijing-first.png
+        summary: 2025 年北京市赛区一等奖。
+      - title: 蓝桥杯嵌入式国家级三等奖
+        year: 2025
+        kind: image
+        path: /assets/img/honors/lanqiao-2025-national-third.jpg
+        summary: 2025 年国赛获奖证书。
+      - title: 蓝桥杯数字科技创新赛全国选拔赛三等奖
+        year: 2025
+        kind: image
+        path: /assets/img/honors/lanqiao-2025-digital-innovation-national-third.png
+        summary: 蓝桥杯拓展赛项获奖证明。
+  - title: 学业与校级荣誉
+    description: 包括奖学金、校级荣誉和阶段性学业表现证明。
+    items:
+      - title: 2024-2025 学年特等学业奖学金
+        year: 2025
+        kind: pdf
+        path: /assets/pdf/honors/academic-scholarship-2024-2025-special.pdf
+        summary: 学业奖学金证明文件。
+      - title: 北京化工大学校级三好学生
+        year: 2025
+        kind: image
+        path: /assets/img/honors/buct-2025-outstanding-student.jpg
+        summary: 校级综合表现荣誉。
+      - title: 专业第一成绩证明
+        year: 2025
+        kind: image
+        path: /assets/img/honors/graduate-ranking-first-transcript.jpg
+        summary: 用于展示当前阶段的专业排名与成绩表现。
