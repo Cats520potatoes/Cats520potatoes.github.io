@@ -1,12 +1,12 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: 简历
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
+cv_pdf: /assets/pdf/heyuan-cv.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: 当前页面展示结构化简历，右上角可直接下载 PDF 版本。
 toc:
   sidebar: left
 ---

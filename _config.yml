@@ -2,23 +2,23 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title:  # the website title (if blank, full name will be used instead)
+title: blank # use the full name in the homepage header
 first_name: 何
 middle_name: 
 last_name: 原
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  欢迎通过邮件联系我，邮箱回复会更及时。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  何原的个人主页，聚焦具身智能、机器人动力学与嵌入式软硬件系统。
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: 具身智能、机器人动力学、嵌入式软硬件# add your own keywords or leave empty
-lang: cn # the language of your site (for example: en, fr, cn, ru, etc.)
+keywords: "具身智能, 机器人动力学, 嵌入式软硬件"
+lang: zh-CN # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://Cats520potatoes.github.io # the base hostname & protocol for your site
+url: https://cats520potatoes.github.io # the base hostname & protocol for your site
 baseurl: 
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
