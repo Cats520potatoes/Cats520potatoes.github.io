@@ -89,7 +89,7 @@
           min-width: 6.75rem;
           padding: 0.45rem 0.85rem;
           margin-bottom: 0;
-          color: var(--global-card-bg-color) !important;
+          color: #f8fbf8 !important;
           border-radius: 999px !important;
           font-size: 0.96rem;
           font-weight: 700;
@@ -97,11 +97,15 @@
           box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
 
           a {
-            color: white;
+            color: inherit !important;
 
             &:hover {
               text-decoration: none;
             }
+          }
+
+          div {
+            color: inherit !important;
           }
         }
 
