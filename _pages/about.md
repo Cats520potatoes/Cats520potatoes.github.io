@@ -40,6 +40,59 @@ latest_posts:
         <a href="{{ '/cv/' | relative_url }}">看完整简历</a>
       </div>
     </div>
+
+    <div class="home-featured-grid">
+      <article class="home-featured-card home-featured-accent">
+        <span class="home-featured-type">Representative Paper</span>
+        <h3>代表论文</h3>
+        <p class="home-featured-title">
+          Stability Enhancement in Variable Morphing Multi-body AUVs for Underwater Structure Maintenance
+        </p>
+        <p>
+          该工作发表于 IROS 2025，聚焦可变构型多体 AUV 的稳定性增强，能够直接体现我在水下机器人动力学建模与控制方向上的研究积累。
+        </p>
+        <div class="home-featured-links">
+          <a href="https://doi.org/10.1109/IROS60139.2025.11247455">查看 DOI</a>
+          <a href="{{ '/publications/' | relative_url }}">浏览全部论文</a>
+        </div>
+      </article>
+
+      <article class="home-featured-card">
+        <span class="home-featured-type">Representative Project</span>
+        <h3>代表项目</h3>
+        <p class="home-featured-title">面向真实部署的灵巧手重定向与 Tea Box 抓取任务</p>
+        <p>
+          这一方向围绕“视频提取 - 仿真重定向 - 实物部署”形成完整链路，并结合 IK 求解与具体抓取任务，集中体现我在跨具身动作映射和系统落地上的能力。
+        </p>
+        <div class="home-featured-links">
+          <a href="{{ '/projects/' | relative_url }}#{{ '具身智能与操作演示' | slugify }}">查看项目视频</a>
+          <a href="{{ '/projects/' | relative_url }}">浏览全部项目</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="home-metric-grid">
+      <div class="home-metric-card">
+        <span class="home-metric-label">学业表现</span>
+        <strong>研究生专业排名 1/65</strong>
+        <p>本科毕业于自动化卓越工程师实验班，持续保持稳定的课程与科研输出。</p>
+      </div>
+      <div class="home-metric-card">
+        <span class="home-metric-label">论文成果</span>
+        <strong>IROS / RA-L / CIAC / ISoIRS</strong>
+        <p>参与多篇机器人方向论文，覆盖会议、期刊和多体系统与运动控制相关研究。</p>
+      </div>
+      <div class="home-metric-card">
+        <span class="home-metric-label">竞赛成绩</span>
+        <strong>RoboCup 国一 / 电赛国二 / 蓝桥杯一等奖</strong>
+        <p>竞赛方向集中在机器人系统、嵌入式控制和原型实现，结果稳定且跨度较大。</p>
+      </div>
+      <div class="home-metric-card">
+        <span class="home-metric-label">实机平台</span>
+        <strong>灵巧手、链式机器人、水下机器人、轮式双臂</strong>
+        <p>项目不局限于单一平台，偏向真实系统中的建模、控制、部署和联调。</p>
+      </div>
+    </div>
   </div>
 
   <aside class="home-sidebar">
@@ -84,59 +137,6 @@ latest_posts:
   </aside>
 </div>
 
-<div class="home-featured-grid">
-  <article class="home-featured-card home-featured-accent">
-    <span class="home-featured-type">Representative Paper</span>
-    <h3>代表论文</h3>
-    <p class="home-featured-title">
-      Stability Enhancement in Variable Morphing Multi-body AUVs for Underwater Structure Maintenance
-    </p>
-    <p>
-      该工作发表于 IROS 2025，聚焦可变构型多体 AUV 的稳定性增强，能够直接体现我在水下机器人动力学建模与控制方向上的研究积累。
-    </p>
-    <div class="home-featured-links">
-      <a href="https://doi.org/10.1109/IROS60139.2025.11247455">查看 DOI</a>
-      <a href="{{ '/publications/' | relative_url }}">浏览全部论文</a>
-    </div>
-  </article>
-
-  <article class="home-featured-card">
-    <span class="home-featured-type">Representative Project</span>
-    <h3>代表项目</h3>
-    <p class="home-featured-title">面向真实部署的灵巧手重定向与 Tea Box 抓取任务</p>
-    <p>
-      这一方向围绕“视频提取 - 仿真重定向 - 实物部署”形成完整链路，并结合 IK 求解与具体抓取任务，集中体现我在跨具身动作映射和系统落地上的能力。
-    </p>
-    <div class="home-featured-links">
-      <a href="{{ '/projects/' | relative_url }}#{{ '具身智能与操作演示' | slugify }}">查看项目视频</a>
-      <a href="{{ '/projects/' | relative_url }}">浏览全部项目</a>
-    </div>
-  </article>
-</div>
-
-<div class="home-metric-grid">
-  <div class="home-metric-card">
-    <span class="home-metric-label">学业表现</span>
-    <strong>研究生专业排名 1/65</strong>
-    <p>本科毕业于自动化卓越工程师实验班，持续保持稳定的课程与科研输出。</p>
-  </div>
-  <div class="home-metric-card">
-    <span class="home-metric-label">论文成果</span>
-    <strong>IROS / RA-L / CIAC / ISoIRS</strong>
-    <p>参与多篇机器人方向论文，覆盖会议、期刊和多体系统与运动控制相关研究。</p>
-  </div>
-  <div class="home-metric-card">
-    <span class="home-metric-label">竞赛成绩</span>
-    <strong>RoboCup 国一 / 电赛国二 / 蓝桥杯一等奖</strong>
-    <p>竞赛方向集中在机器人系统、嵌入式控制和原型实现，结果稳定且跨度较大。</p>
-  </div>
-  <div class="home-metric-card">
-    <span class="home-metric-label">实机平台</span>
-    <strong>灵巧手、链式机器人、水下机器人、轮式双臂</strong>
-    <p>项目不局限于单一平台，偏向真实系统中的建模、控制、部署和联调。</p>
-  </div>
-</div>
-
 ## 研究与实践
 
 我目前在北京化工大学攻读控制科学与工程硕士，研究与实践的主线始终围绕真实机器人系统展开。相比只停留在仿真或单点算法验证，我更关注一套方法是否能够完成从建模、控制、联调到实机部署的完整闭环，并在实际环境中稳定工作。
@@ -176,6 +176,12 @@ latest_posts:
   .home-top-main,
   .home-sidebar {
     min-width: 0;
+  }
+
+  .home-top-main {
+    display: grid;
+    gap: 1.2rem;
+    align-content: start;
   }
 
   .home-sidebar {
@@ -337,7 +343,7 @@ latest_posts:
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.2rem;
-    margin: 0 0 1.4rem;
+    margin: 0;
   }
 
   .home-featured-card {
@@ -393,9 +399,9 @@ latest_posts:
 
   .home-metric-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
-    margin: 0 0 2rem;
+    margin: 0;
   }
 
   .home-metric-card {
