@@ -21,7 +21,7 @@ latest_posts:
 <div class="home-top-grid">
   <div class="home-top-main">
     <div class="home-hero-panel">
-      <p class="home-hero-kicker">211高校北京化工大学控制科学与工程硕士｜具身智能与机器人系统方向</p>
+      <p class="home-hero-kicker">北京化工大学（211）控制科学与工程硕士｜具身智能与机器人系统方向</p>
       <h2>我更关心的不是算法是否“能跑”，而是它能否真正部署到机器人上，并在真实环境里稳定工作。</h2>
       <p class="home-hero-lead">
         围绕灵巧手重定向、机器人动力学、运动控制和嵌入式系统，我持续在做从建模仿真、算法实现到电控联调和实机验证的完整链路工作。
@@ -72,10 +72,15 @@ latest_posts:
     </div>
 
     <div class="home-metric-grid">
+      <div class="home-metric-card home-metric-card-wide">
+        <span class="home-metric-label">学历背景</span>
+        <strong>北京化工大学（211） · 控制科学与工程硕士</strong>
+        <p>本科毕业于自动化卓越工程师实验班，后保研进入具身智能课题组继续攻读硕士。</p>
+      </div>
       <div class="home-metric-card">
         <span class="home-metric-label">学业表现</span>
         <strong>研究生专业排名 1/65</strong>
-        <p>本科毕业于自动化卓越工程师实验班，持续保持稳定的课程与科研输出。</p>
+        <p>研究生成绩 3.71/4.00，本科专业成绩 88.44/100，持续保持稳定的课程与科研输出。</p>
       </div>
       <div class="home-metric-card">
         <span class="home-metric-label">论文成果</span>
@@ -94,39 +99,6 @@ latest_posts:
       </div>
     </div>
 
-    <section class="home-education-panel">
-      <div class="home-section-heading">
-        <span>Education</span>
-        <h3>教育背景</h3>
-      </div>
-      <div class="home-education-grid">
-        <article class="home-education-card">
-          <div class="home-education-period">2023 - 至今</div>
-          <h4>北京化工大学（211）</h4>
-          <p class="home-education-degree">控制科学与工程 · 硕士研究生</p>
-          <p class="home-education-summary">
-            保研进入 211 高校北京化工大学具身智能课题组，持续围绕具身智能、机器人动力学和真实系统部署开展研究。
-          </p>
-          <ul class="home-education-highlights">
-            <li>研究生专业排名 1/65，研究生成绩 3.71/4.00。</li>
-            <li>参与国家重点项目，围绕灵巧手、水下机器人和链式机器人开展研究。</li>
-          </ul>
-        </article>
-
-        <article class="home-education-card">
-          <div class="home-education-period">2020 - 2024</div>
-          <h4>北京化工大学（211）</h4>
-          <p class="home-education-degree">自动化卓越工程师实验班 · 本科</p>
-          <p class="home-education-summary">
-            本科阶段在 211 高校北京化工大学系统学习机器人控制、嵌入式系统与智能算法，为后续科研和工程实践打下基础。
-          </p>
-          <ul class="home-education-highlights">
-            <li>本科专业成绩 88.44/100。</li>
-            <li>主修课程覆盖机器人动力学、工业机器人、Python 程序设计、嵌入式系统等方向。</li>
-          </ul>
-        </article>
-      </div>
-    </section>
   </div>
 
   <aside class="home-sidebar">
@@ -443,6 +415,10 @@ latest_posts:
     border-radius: 20px;
   }
 
+  .home-metric-card-wide {
+    grid-column: 1 / -1;
+  }
+
   .home-metric-label {
     display: block;
     margin-bottom: 0.45rem;
@@ -470,86 +446,6 @@ latest_posts:
     margin: 1.5rem 0 1rem;
   }
 
-  .home-education-panel {
-    padding: 1.25rem 1.3rem 1.35rem;
-    border-radius: 24px;
-    background: linear-gradient(135deg, rgba(34, 139, 34, 0.08), rgba(255, 255, 255, 0.98));
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.06);
-  }
-
-  .home-section-heading {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-    justify-content: space-between;
-    gap: 0.65rem;
-    margin-bottom: 1rem;
-  }
-
-  .home-section-heading span {
-    color: #6c757d;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  .home-section-heading h3 {
-    margin-bottom: 0;
-    font-size: 1.35rem;
-  }
-
-  .home-education-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .home-education-card {
-    padding: 1.15rem 1.15rem 1.05rem;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.88);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-  }
-
-  .home-education-period {
-    display: inline-flex;
-    margin-bottom: 0.7rem;
-    padding: 0.36rem 0.72rem;
-    border-radius: 999px;
-    background: rgba(47, 125, 50, 0.1);
-    color: #1f5e26;
-    font-size: 0.83rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-  }
-
-  .home-education-card h4 {
-    margin-bottom: 0.3rem;
-    font-size: 1.18rem;
-  }
-
-  .home-education-degree {
-    margin-bottom: 0.6rem;
-    color: #35563b;
-    font-size: 0.98rem;
-    font-weight: 700;
-  }
-
-  .home-education-summary {
-    margin-bottom: 0.75rem;
-  }
-
-  .home-education-highlights {
-    margin: 0;
-    padding-left: 1.1rem;
-  }
-
-  .home-education-highlights li + li {
-    margin-top: 0.42rem;
-  }
-
   .home-focus-card {
     padding: 1.1rem 1.15rem;
     border-radius: 20px;
@@ -567,7 +463,6 @@ latest_posts:
 
   @media (max-width: 992px) {
     .home-top-grid,
-    .home-education-grid,
     .home-featured-grid,
     .home-metric-grid,
     .home-focus-grid {
