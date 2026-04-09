@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: 首页
 permalink: /
 subtitle: 具身智能与机器人系统研究者，关注从算法设计到真实系统部署的完整闭环。
 

@@ -10,15 +10,19 @@ layout: default
     {% assign latest_posts_title = '最近更新' %}
     {% assign selected_publications_title = '代表论文' %}
   {% endif %}
+  {% capture display_name %}
+    {% if page.homepage_title %}
+      {{ page.homepage_title }}
+    {% elsif site.lang contains 'zh' and site.title == 'blank' %}
+      {{ site.first_name }}{{ site.middle_name }}{{ site.last_name }}
+    {% elsif site.title == 'blank' %}
+      {{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  {% endcapture %}
   <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
+    <h1 class="post-title home-wordmark">{{ display_name | strip }}</h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
