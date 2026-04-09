@@ -21,7 +21,7 @@ latest_posts:
 <div class="home-top-grid">
   <div class="home-top-main">
     <div class="home-hero-panel">
-      <p class="home-hero-kicker">北京化工大学控制科学与工程硕士｜具身智能与机器人系统方向</p>
+      <p class="home-hero-kicker">211高校北京化工大学控制科学与工程硕士｜具身智能与机器人系统方向</p>
       <h2>我更关心的不是算法是否“能跑”，而是它能否真正部署到机器人上，并在真实环境里稳定工作。</h2>
       <p class="home-hero-lead">
         围绕灵巧手重定向、机器人动力学、运动控制和嵌入式系统，我持续在做从建模仿真、算法实现到电控联调和实机验证的完整链路工作。
@@ -102,10 +102,10 @@ latest_posts:
       <div class="home-education-grid">
         <article class="home-education-card">
           <div class="home-education-period">2023 - 至今</div>
-          <h4>北京化工大学</h4>
+          <h4>北京化工大学（211）</h4>
           <p class="home-education-degree">控制科学与工程 · 硕士研究生</p>
           <p class="home-education-summary">
-            保研进入具身智能课题组，持续围绕具身智能、机器人动力学和真实系统部署开展研究。
+            保研进入 211 高校北京化工大学具身智能课题组，持续围绕具身智能、机器人动力学和真实系统部署开展研究。
           </p>
           <ul class="home-education-highlights">
             <li>研究生专业排名 1/65，研究生成绩 3.71/4.00。</li>
@@ -115,10 +115,10 @@ latest_posts:
 
         <article class="home-education-card">
           <div class="home-education-period">2020 - 2024</div>
-          <h4>北京化工大学</h4>
+          <h4>北京化工大学（211）</h4>
           <p class="home-education-degree">自动化卓越工程师实验班 · 本科</p>
           <p class="home-education-summary">
-            本科阶段系统学习机器人控制、嵌入式系统与智能算法，为后续科研和工程实践打下基础。
+            本科阶段在 211 高校北京化工大学系统学习机器人控制、嵌入式系统与智能算法，为后续科研和工程实践打下基础。
           </p>
           <ul class="home-education-highlights">
             <li>本科专业成绩 88.44/100。</li>
@@ -139,7 +139,7 @@ latest_posts:
       <div class="profile-info-list">
         <div class="profile-info-item">
           <span class="profile-info-label">学校</span>
-          <span class="profile-info-value">北京化工大学</span>
+          <span class="profile-info-value">北京化工大学（211）</span>
         </div>
         <div class="profile-info-item">
           <span class="profile-info-label">方向</span>
@@ -173,9 +173,9 @@ latest_posts:
 
 ## 研究与实践
 
-我目前在北京化工大学攻读控制科学与工程硕士，研究与实践的主线始终围绕真实机器人系统展开。相比只停留在仿真或单点算法验证，我更关注一套方法是否能够完成从建模、控制、联调到实机部署的完整闭环，并在实际环境中稳定工作。
+我目前在 211 高校北京化工大学攻读控制科学与工程硕士，研究与实践的主线始终围绕真实机器人系统展开。相比只停留在仿真或单点算法验证，我更关注一套方法是否能够完成从建模、控制、联调到实机部署的完整闭环，并在实际环境中稳定工作。
 
-本科阶段，我就读于北京化工大学自动化卓越工程师实验班，之后保研进入具身智能课题组继续从事机器人方向研究。围绕链式机器人、水下机器人、轮式双臂人形机器人以及灵巧手重定向等课题，我逐步形成了一套偏系统化的工作方式：从问题定义和动力学建模出发，推进到控制器设计、接口联调、电控实现，再落到最终的实机验证与任务执行。
+本科阶段，我就读于 211 高校北京化工大学自动化卓越工程师实验班，之后保研进入具身智能课题组继续从事机器人方向研究。围绕链式机器人、水下机器人、轮式双臂人形机器人以及灵巧手重定向等课题，我逐步形成了一套偏系统化的工作方式：从问题定义和动力学建模出发，推进到控制器设计、接口联调、电控实现，再落到最终的实机验证与任务执行。
 
 我尤其关注复杂接触与动力学约束下的动作生成、人类演示到机器人执行的跨具身重定向，以及算法研究如何真正转化为可运行、可验证、可迭代的机器人系统。这个网站对我来说不只是简历的网页版本，更是一个持续更新的个人研究主页，用来整理项目过程、论文成果和阶段性工程积累。
 
