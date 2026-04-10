@@ -3,13 +3,13 @@ sections:
     description: 这一组主要展示我在具身智能、抓取任务执行和灵巧手重定向方向上的实践内容，重点关注“视频演示到机器人动作”的闭环。
     items:
       - title: LeRobot 操作链路搭建
-        path: /assets/video/showcase/manipulation/lerobot-reproduction.mp4
-        role: 具身智能 / 操作部署
-        summary: 基于开源框架完成操作任务链路搭建与部署，用于验证抓取与操作流程的可行性。
+        path: /assets/video/showcase/vla/lerobot-reproduction.mp4
+        role: VLA / 操作部署
+        summary: 面向 VLA 任务链路完成操作流程搭建与部署，用于验证抓取与操作执行的可行性。
         details:
           - 完成训练、推理与执行流程对齐。
-          - 用于快速验证策略迁移、操作链路和实验环境配置。
-        tags: [LeRobot, Manipulation, Deployment]
+          - 用于快速验证策略迁移、任务链路和实验环境配置。
+        tags: [VLA, Manipulation, Deployment]
       - title: 抓取 Demo
         path: /assets/video/showcase/manipulation/grasp-demo-1.mp4
         role: 机械臂抓取
