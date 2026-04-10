@@ -136,36 +136,87 @@ latest_posts:
   </div>
 </div>
 
-<div class="home-featured-grid">
-  <article class="home-featured-card home-featured-accent">
-    <span class="home-featured-type">Research Outputs</span>
-    <h3>论文与成果</h3>
-    <p class="home-featured-title">IROS / RA-L / OE / CIAC / ISoIRS</p>
-    <p>
-      研究成果覆盖水下机器人、多体动力学、链式机器人与运动控制等方向，页面下方已整理代表论文与对应演示内容。
-    </p>
-    <div class="home-featured-links">
-      <a href="{{ '/publications/' | relative_url }}">浏览论文成果</a>
-    </div>
-  </article>
-
-  <article class="home-featured-card">
-    <span class="home-featured-type">Representative Project</span>
-    <h3>代表项目</h3>
-    <p class="home-featured-title">面向真实部署的灵巧手重定向与 Tea Box 抓取任务</p>
-    <p>
-      这一方向围绕“视频提取 - 仿真重定向 - 实物部署”形成完整链路，并结合 IK 求解与具体抓取任务，集中体现我在跨具身动作映射和系统落地上的能力。
-    </p>
-    <div class="home-featured-links">
-      <a href="{{ '/projects/' | relative_url }}#{{ '具身智能与操作演示' | slugify }}">查看项目视频</a>
-      <a href="{{ '/projects/' | relative_url }}">浏览全部项目</a>
-    </div>
-  </article>
-</div>
-
 ## 这个网站里有什么
 
 如果你希望快速判断我的能力边界，建议先看 [项目展示]({{ '/projects/' | relative_url }})，那里集中放了最能反映系统能力的视频和项目说明；再看 [论文成果]({{ '/publications/' | relative_url }}) 和 [荣誉与证书]({{ '/honors/' | relative_url }})；如果你需要一页式概览，可以直接查看 [简历页面]({{ '/cv/' | relative_url }})。
+
+## 代表项目
+
+这几项是目前最能代表我在具身智能与机器人系统方向工作方式的项目，优先选择了灵巧手、VLA 部署和机械臂操作相关内容，没有先放链式机器人部分。
+
+<div class="home-project-showcase publications">
+  <ol class="bibliography">
+    <li>
+      <div class="row">
+        <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100 home-project-badge home-project-badge-dex"><div>DEX</div></abbr>
+          <div class="home-project-preview">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="{{ '/assets/video/showcase/dexterous-hand-retarget-tea-comparison.mp4' | relative_url }}" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="title">灵巧手重定向与 Tea Box 抓取任务</div>
+          <div class="periodical"><em>跨具身重定向 · 灵巧操作 · 实机部署</em></div>
+          <div class="periodical home-project-summary">
+            围绕“视频提取 - 仿真重定向 - 灵巧手执行”打通完整链路，并将 Tea Box 抓取任务作为实物验证场景，体现我在动作映射、IK 求解和系统落地上的综合能力。
+          </div>
+          <div class="links">
+            <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
+            <a href="{{ '/assets/video/showcase/dexterous-hand-retarget-tea-comparison.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="row">
+        <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100 home-project-badge home-project-badge-vla"><div>VLA</div></abbr>
+          <div class="home-project-preview home-project-preview-placeholder">
+            <div class="home-project-placeholder-text">Wheel-Mobile Dual-Arm Deployment</div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="title">轮式双臂人形机器人 VLA 部署</div>
+          <div class="periodical"><em>整机联调 · 抓拿放取 · 算法部署</em></div>
+          <div class="periodical home-project-summary">
+            基于自研轮式双臂人形机器人完成抓拿放取任务部署，工作内容覆盖底盘、机械臂与传感器电气连接、接口联调、任务测试脚本以及算法框架迁移与部署。
+          </div>
+          <div class="links">
+            <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
+            <a href="{{ '/cv/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看经历</a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="row">
+        <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100 home-project-badge home-project-badge-arm"><div>ARM</div></abbr>
+          <div class="home-project-preview">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="{{ '/assets/video/showcase/manipulator-ik.mp4' | relative_url }}" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="title">机械臂逆运动学与抓取控制</div>
+          <div class="periodical"><em>运动学求解 · 机械臂操作 · 任务执行</em></div>
+          <div class="periodical home-project-summary">
+            以机械臂逆运动学求解和抓取执行为基础模块，支撑后续目标抓取和任务规划，重点体现我在位姿求解、轨迹跟踪和执行稳定性方面的工程实现能力。
+          </div>
+          <div class="links">
+            <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
+            <a href="{{ '/assets/video/showcase/manipulator-ik.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
 
 <style>
   .home-top-grid {
@@ -194,7 +245,6 @@ latest_posts:
 
   .home-portrait-card,
   .home-profile-card,
-  .home-featured-card,
   .home-metric-card,
   .home-focus-card {
     background: #fff;
@@ -342,64 +392,6 @@ latest_posts:
     font-weight: 700;
   }
 
-  .home-featured-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.2rem;
-    margin: 1.55rem 0 0;
-  }
-
-  .home-featured-card {
-    padding: 1.25rem 1.3rem 1.2rem;
-    border-radius: 24px;
-  }
-
-  .home-featured-accent {
-    background: linear-gradient(135deg, rgba(47, 125, 50, 0.12), rgba(255, 255, 255, 0.98));
-  }
-
-  .home-featured-type {
-    display: inline-flex;
-    margin-bottom: 0.75rem;
-    padding: 0.35rem 0.7rem;
-    border-radius: 999px;
-    background: rgba(0, 0, 0, 0.05);
-    color: #495057;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .home-featured-card h3 {
-    margin-bottom: 0.45rem;
-    font-size: 1.15rem;
-  }
-
-  .home-featured-title {
-    margin-bottom: 0.7rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 1.45;
-  }
-
-  .home-featured-card p:last-of-type {
-    margin-bottom: 0;
-  }
-
-  .home-featured-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin-top: 0.95rem;
-  }
-
-  .home-featured-links a {
-    color: #1f5e26;
-    text-decoration: none;
-    font-weight: 700;
-  }
-
   .home-metric-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -443,6 +435,70 @@ latest_posts:
     margin: 1.5rem 0 1rem;
   }
 
+  .home-project-showcase {
+    margin-top: 1.25rem;
+  }
+
+  .home-project-showcase .bibliography {
+    margin-bottom: 0;
+  }
+
+  .home-project-showcase .home-project-summary {
+    margin-top: 0.35rem;
+    color: var(--global-text-color);
+  }
+
+  .home-project-showcase .home-project-preview,
+  .home-project-showcase .home-project-preview video {
+    display: block;
+    width: 100%;
+  }
+
+  .home-project-showcase .home-project-preview video {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 18px;
+    background: rgba(225, 233, 226, 0.6);
+  }
+
+  .home-project-showcase .home-project-preview-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    padding: 1rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(53, 86, 59, 0.14), rgba(15, 23, 42, 0.08));
+    text-align: center;
+  }
+
+  .home-project-showcase .home-project-placeholder-text {
+    color: #28412d;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .home-project-showcase .home-project-badge {
+    color: #f8fbf8 !important;
+  }
+
+  .home-project-showcase .home-project-badge div {
+    color: inherit !important;
+  }
+
+  .home-project-showcase .home-project-badge-dex {
+    background-color: #2f7d32;
+  }
+
+  .home-project-showcase .home-project-badge-vla {
+    background-color: #35563b;
+  }
+
+  .home-project-showcase .home-project-badge-arm {
+    background-color: #4f6d8c;
+  }
+
   .home-focus-card {
     padding: 1.1rem 1.15rem;
     border-radius: 20px;
@@ -460,7 +516,6 @@ latest_posts:
 
   @media (max-width: 992px) {
     .home-top-grid,
-    .home-featured-grid,
     .home-metric-grid,
     .home-focus-grid {
       grid-template-columns: 1fr;
@@ -477,7 +532,6 @@ latest_posts:
       padding: 1.15rem 1.1rem;
     }
 
-    .home-featured-card,
     .home-metric-card,
     .home-focus-card,
     .home-profile-card {
