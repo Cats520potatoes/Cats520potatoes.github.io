@@ -10,6 +10,14 @@ sections:
           - 完成训练、推理与执行流程对齐。
           - 用于快速验证策略迁移、任务链路和实验环境配置。
         tags: [VLA, Manipulation, Deployment]
+      - title: UMI 双臂操作链路搭建
+        path: /assets/video/showcase/vla/UMI复现.mp4
+        role: VLA / 双臂操作
+        summary: 面向 UMI 场景完成双臂操作任务链路搭建与部署，用于验证视觉到动作执行的完整流程。
+        details:
+          - 覆盖任务流程对齐、推理执行与操作演示验证。
+          - 重点体现双臂操作场景下的系统联调与部署能力。
+        tags: [UMI, VLA, Dual-Arm]
       - title: 抓取 Demo
         path: /assets/video/showcase/manipulation/grasp-demo-1.mp4
         role: 机械臂抓取
@@ -166,3 +174,27 @@ sections:
           - 偏向轻量级交互装置和结构控制联动设计。
           - 用于体现工程实现之外的原型创意能力。
         tags: [Prototype, Embedded, Design]
+      - title: YOLO 多车识别与规划
+        path: /assets/video/showcase/embedded-competition/yolo多车识别和规划.mp4
+        role: 视觉识别 / 路径规划
+        summary: 展示基于视觉感知的多车识别与路径规划过程，体现感知算法与任务规划协同。
+        details:
+          - 重点关注多目标识别、状态判断与路径生成的完整流程。
+          - 体现我在视觉感知与任务规划结合方面的实现能力。
+        tags: [YOLO, Planning, Vision]
+      - title: 单自由度振子控制
+        path: /assets/video/showcase/embedded-competition/单自由度振子.mp4
+        role: 控制实验
+        summary: 展示单自由度振子平台上的控制实验过程，用于体现基础控制算法与系统调试能力。
+        details:
+          - 适合作为动力学建模与反馈控制验证的实验样本。
+          - 重点体现参数整定与实验平台实现过程。
+        tags: [Control, Dynamics, Experiment]
+      - title: 双自由度振子控制
+        path: /assets/video/showcase/embedded-competition/双自由度振子.mp4
+        role: 控制实验
+        summary: 展示双自由度振子平台上的动态控制过程，体现更复杂系统下的建模与控制验证。
+        details:
+          - 相比单自由度场景，更能体现多变量耦合下的控制实现能力。
+          - 可用于展示实验平台搭建、状态控制与结果调试过程。
+        tags: [Control, Coupled Dynamics, Experiment]

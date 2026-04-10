@@ -176,19 +176,19 @@ latest_posts:
           <abbr class="badge rounded w-100 home-project-badge home-project-badge-vla"><div>VLA</div></abbr>
           <div class="home-project-preview">
             <video autoplay muted loop playsinline preload="metadata">
-              <source src="{{ '/assets/video/showcase/manipulation/grasp-task-demo-2.mp4' | relative_url }}" type="video/mp4" />
+              <source src="{{ '/assets/video/showcase/vla/UMI复现.mp4' | relative_url }}" type="video/mp4" />
             </video>
           </div>
         </div>
         <div class="col-sm-8">
-          <div class="title">VLA 机械臂抓取与任务执行</div>
-          <div class="periodical"><em>机械臂抓取 · 任务执行 · 部署联调</em></div>
+          <div class="title">VLA 双臂操作与任务执行</div>
+          <div class="periodical"><em>双臂操作 · 任务执行 · 部署联调</em></div>
           <div class="periodical home-project-summary">
-            面向 VLA 场景下的机械臂抓取与任务执行，我负责底盘、机械臂与传感器之间的接口联调、任务测试脚本编写，以及算法部署过程中的驱动与执行链路打通。
+            面向 VLA 场景下的双臂操作与任务执行，我负责机械臂与传感器之间的接口联调、任务测试脚本编写，以及部署过程中的驱动与执行链路打通。
           </div>
           <div class="links">
             <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
-            <a href="{{ '/assets/video/showcase/manipulation/grasp-task-demo-2.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
+            <a href="{{ '/assets/video/showcase/vla/UMI复现.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
           </div>
         </div>
       </div>
