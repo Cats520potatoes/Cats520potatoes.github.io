@@ -174,43 +174,21 @@ latest_posts:
       <div class="row">
         <div class="col col-sm-2 abbr">
           <abbr class="badge rounded w-100 home-project-badge home-project-badge-vla"><div>VLA</div></abbr>
-          <div class="home-project-preview home-project-preview-placeholder">
-            <div class="home-project-placeholder-text">Wheel-Mobile Dual-Arm Deployment</div>
-          </div>
-        </div>
-        <div class="col-sm-8">
-          <div class="title">轮式双臂人形机器人 VLA 部署</div>
-          <div class="periodical"><em>整机联调 · 抓拿放取 · 算法部署</em></div>
-          <div class="periodical home-project-summary">
-            基于自研轮式双臂人形机器人完成抓拿放取任务部署，工作内容覆盖底盘、机械臂与传感器电气连接、接口联调、任务测试脚本以及算法框架迁移与部署。
-          </div>
-          <div class="links">
-            <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
-            <a href="{{ '/cv/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看经历</a>
-          </div>
-        </div>
-      </div>
-    </li>
-
-    <li>
-      <div class="row">
-        <div class="col col-sm-2 abbr">
-          <abbr class="badge rounded w-100 home-project-badge home-project-badge-arm"><div>ARM</div></abbr>
           <div class="home-project-preview">
             <video autoplay muted loop playsinline preload="metadata">
-              <source src="{{ '/assets/video/showcase/manipulator-ik.mp4' | relative_url }}" type="video/mp4" />
+              <source src="{{ '/assets/video/showcase/grasp-task-demo-2.mp4' | relative_url }}" type="video/mp4" />
             </video>
           </div>
         </div>
         <div class="col-sm-8">
-          <div class="title">机械臂逆运动学与抓取控制</div>
-          <div class="periodical"><em>运动学求解 · 机械臂操作 · 任务执行</em></div>
+          <div class="title">VLA 机械臂抓取与任务执行</div>
+          <div class="periodical"><em>机械臂抓取 · 任务执行 · 部署联调</em></div>
           <div class="periodical home-project-summary">
-            以机械臂逆运动学求解和抓取执行为基础模块，支撑后续目标抓取和任务规划，重点体现我在位姿求解、轨迹跟踪和执行稳定性方面的工程实现能力。
+            面向 VLA 场景下的机械臂抓取与任务执行，我负责底盘、机械臂与传感器之间的接口联调、任务测试脚本编写，以及算法部署过程中的驱动与执行链路打通。
           </div>
           <div class="links">
             <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
-            <a href="{{ '/assets/video/showcase/manipulator-ik.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
+            <a href="{{ '/assets/video/showcase/grasp-task-demo-2.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
           </div>
         </div>
       </div>
@@ -439,6 +417,10 @@ latest_posts:
     margin-top: 1.25rem;
   }
 
+  .home-project-showcase .row {
+    grid-template-columns: minmax(340px, 460px) minmax(0, 1fr);
+  }
+
   .home-project-showcase .bibliography {
     margin-bottom: 0;
   }
@@ -455,28 +437,10 @@ latest_posts:
   }
 
   .home-project-showcase .home-project-preview video {
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
     border-radius: 18px;
-    background: rgba(225, 233, 226, 0.6);
-  }
-
-  .home-project-showcase .home-project-preview-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px;
-    padding: 1rem;
-    border-radius: 18px;
-    background: linear-gradient(135deg, rgba(53, 86, 59, 0.14), rgba(15, 23, 42, 0.08));
-    text-align: center;
-  }
-
-  .home-project-showcase .home-project-placeholder-text {
-    color: #28412d;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
+    background: rgba(232, 238, 234, 0.92);
   }
 
   .home-project-showcase .home-project-badge {
@@ -493,10 +457,6 @@ latest_posts:
 
   .home-project-showcase .home-project-badge-vla {
     background-color: #35563b;
-  }
-
-  .home-project-showcase .home-project-badge-arm {
-    background-color: #4f6d8c;
   }
 
   .home-focus-card {
