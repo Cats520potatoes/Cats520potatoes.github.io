@@ -41,36 +41,6 @@ latest_posts:
       </div>
     </div>
 
-    <div class="home-featured-grid">
-      <article class="home-featured-card home-featured-accent">
-        <span class="home-featured-type">Representative Paper</span>
-        <h3>代表论文</h3>
-        <p class="home-featured-title">
-          Stability Enhancement in Variable Morphing Multi-body AUVs for Underwater Structure Maintenance
-        </p>
-        <p>
-          该工作发表于 IROS 2025，聚焦可变构型多体 AUV 的稳定性增强，能够直接体现我在水下机器人动力学建模与控制方向上的研究积累。
-        </p>
-        <div class="home-featured-links">
-          <a href="https://doi.org/10.1109/IROS60139.2025.11247455">查看 DOI</a>
-          <a href="{{ '/publications/' | relative_url }}">浏览全部论文</a>
-        </div>
-      </article>
-
-      <article class="home-featured-card">
-        <span class="home-featured-type">Representative Project</span>
-        <h3>代表项目</h3>
-        <p class="home-featured-title">面向真实部署的灵巧手重定向与 Tea Box 抓取任务</p>
-        <p>
-          这一方向围绕“视频提取 - 仿真重定向 - 实物部署”形成完整链路，并结合 IK 求解与具体抓取任务，集中体现我在跨具身动作映射和系统落地上的能力。
-        </p>
-        <div class="home-featured-links">
-          <a href="{{ '/projects/' | relative_url }}#{{ '具身智能与操作演示' | slugify }}">查看项目视频</a>
-          <a href="{{ '/projects/' | relative_url }}">浏览全部项目</a>
-        </div>
-      </article>
-    </div>
-
     <div class="home-metric-grid">
       <div class="home-metric-card home-metric-card-wide">
         <span class="home-metric-label">学历背景</span>
@@ -164,6 +134,33 @@ latest_posts:
     <h3>工程实现能力</h3>
     <p>C/C++、Python、ROS2、MATLAB、MuJoCo、嵌入式软硬件联调，以及面向实机的系统集成与调试。</p>
   </div>
+</div>
+
+<div class="home-featured-grid">
+  <article class="home-featured-card home-featured-accent">
+    <span class="home-featured-type">Research Outputs</span>
+    <h3>论文与成果</h3>
+    <p class="home-featured-title">IROS / RA-L / OE / CIAC / ISoIRS</p>
+    <p>
+      研究成果覆盖水下机器人、多体动力学、链式机器人与运动控制等方向，页面下方已整理代表论文与对应演示内容。
+    </p>
+    <div class="home-featured-links">
+      <a href="{{ '/publications/' | relative_url }}">浏览论文成果</a>
+    </div>
+  </article>
+
+  <article class="home-featured-card">
+    <span class="home-featured-type">Representative Project</span>
+    <h3>代表项目</h3>
+    <p class="home-featured-title">面向真实部署的灵巧手重定向与 Tea Box 抓取任务</p>
+    <p>
+      这一方向围绕“视频提取 - 仿真重定向 - 实物部署”形成完整链路，并结合 IK 求解与具体抓取任务，集中体现我在跨具身动作映射和系统落地上的能力。
+    </p>
+    <div class="home-featured-links">
+      <a href="{{ '/projects/' | relative_url }}#{{ '具身智能与操作演示' | slugify }}">查看项目视频</a>
+      <a href="{{ '/projects/' | relative_url }}">浏览全部项目</a>
+    </div>
+  </article>
 </div>
 
 ## 这个网站里有什么
@@ -349,7 +346,7 @@ latest_posts:
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.2rem;
-    margin: 0;
+    margin: 1.55rem 0 0;
   }
 
   .home-featured-card {
