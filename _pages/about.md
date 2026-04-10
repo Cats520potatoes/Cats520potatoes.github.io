@@ -152,7 +152,7 @@ latest_posts:
           <abbr class="badge rounded w-100 home-project-badge home-project-badge-dex"><div>DEX</div></abbr>
           <div class="home-project-preview">
             <video autoplay muted loop playsinline preload="metadata">
-              <source src="{{ '/assets/video/showcase/dexterous-hand-retarget-tea-comparison.mp4' | relative_url }}" type="video/mp4" />
+              <source src="{{ '/assets/video/showcase/dexterous-hand/dexterous-hand-retarget-tea-comparison.mp4' | relative_url }}" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -164,7 +164,7 @@ latest_posts:
           </div>
           <div class="links">
             <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
-            <a href="{{ '/assets/video/showcase/dexterous-hand-retarget-tea-comparison.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
+            <a href="{{ '/assets/video/showcase/dexterous-hand/dexterous-hand-retarget-tea-comparison.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
           </div>
         </div>
       </div>
@@ -176,7 +176,7 @@ latest_posts:
           <abbr class="badge rounded w-100 home-project-badge home-project-badge-vla"><div>VLA</div></abbr>
           <div class="home-project-preview">
             <video autoplay muted loop playsinline preload="metadata">
-              <source src="{{ '/assets/video/showcase/grasp-task-demo-2.mp4' | relative_url }}" type="video/mp4" />
+              <source src="{{ '/assets/video/showcase/manipulation/grasp-task-demo-2.mp4' | relative_url }}" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -188,7 +188,7 @@ latest_posts:
           </div>
           <div class="links">
             <a href="{{ '/projects/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">浏览项目页</a>
-            <a href="{{ '/assets/video/showcase/grasp-task-demo-2.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
+            <a href="{{ '/assets/video/showcase/manipulation/grasp-task-demo-2.mp4' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看视频</a>
           </div>
         </div>
       </div>

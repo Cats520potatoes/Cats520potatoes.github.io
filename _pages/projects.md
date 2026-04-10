@@ -62,33 +62,37 @@ nav_order: 3
       <span class="showcase-section-count">{{ section.items.size }} 个项目视频</span>
     </div>
 
-    <div class="row">
+    <div class="showcase-project-list">
       {% for item in section.items %}
-        <div class="col-lg-6 mb-4">
-          <div class="card h-100 hoverable showcase-card">
-            <div class="card-body">
-              <div class="showcase-video mb-3">
-                {% include video.liquid path=item.path class="img-fluid rounded z-depth-1" controls=true %}
-              </div>
-              <div class="showcase-chip-row mb-2">
-                <span class="showcase-role-chip">{{ item.role }}</span>
+        <article class="showcase-project-card">
+          <div class="showcase-media">
+            <div class="showcase-video">
+              {% include video.liquid path=item.path class="img-fluid rounded z-depth-1" controls=true %}
+            </div>
+          </div>
+          <div class="showcase-content">
+            <div class="showcase-card-top">
+              <span class="showcase-role-chip">{{ item.role }}</span>
+              <div class="showcase-chip-row">
                 {% for tag in item.tags %}
                   <span class="showcase-chip">{{ tag }}</span>
                 {% endfor %}
               </div>
-              <h5 class="card-title mb-1">{{ item.title }}</h5>
-              <p class="card-text">{{ item.summary }}</p>
-              {% if item.details %}
-                <h6 class="showcase-detail-title">项目说明</h6>
-                <ul>
+            </div>
+            <h3 class="showcase-project-title">{{ item.title }}</h3>
+            <p class="showcase-project-summary">{{ item.summary }}</p>
+            {% if item.details %}
+              <div class="showcase-detail-block">
+                <h4 class="showcase-detail-title">项目说明</h4>
+                <ul class="showcase-detail-list">
                   {% for detail in item.details %}
                     <li>{{ detail }}</li>
                   {% endfor %}
                 </ul>
-              {% endif %}
-            </div>
+              </div>
+            {% endif %}
           </div>
-        </div>
+        </article>
       {% endfor %}
     </div>
   </section>
@@ -154,8 +158,39 @@ nav_order: 3
     font-size: 0.92rem;
   }
 
-  .showcase-card {
-    border: 1px solid rgba(0, 0, 0, 0.08);
+  .showcase-project-list {
+    display: grid;
+    gap: 1.2rem;
+  }
+
+  .showcase-project-card {
+    display: grid;
+    grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+    gap: 1.3rem;
+    padding: 1.25rem;
+    border-radius: 26px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 249, 248, 0.98));
+    box-shadow: 0 18px 36px rgba(15, 23, 42, 0.05);
+  }
+
+  .showcase-project-card:nth-child(odd) {
+    background: linear-gradient(135deg, rgba(47, 125, 50, 0.08), rgba(255, 255, 255, 0.98));
+  }
+
+  .showcase-content {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .showcase-card-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
   }
 
   .showcase-chip-row {
@@ -185,14 +220,36 @@ nav_order: 3
     color: #495057;
   }
 
+  .showcase-project-title {
+    margin-bottom: 0.55rem;
+    font-size: 1.35rem;
+    line-height: 1.36;
+  }
+
+  .showcase-project-summary {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .showcase-detail-block {
+    margin-top: 0.95rem;
+    padding-top: 0.95rem;
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
   .showcase-detail-title {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
   }
 
-  .showcase-card ul {
+  .showcase-detail-list {
     padding-left: 1.1rem;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0;
+  }
+
+  .showcase-detail-list li + li {
+    margin-top: 0.4rem;
   }
 
   .showcase-video figure {
@@ -201,13 +258,26 @@ nav_order: 3
 
   .showcase-video video {
     width: 100%;
-    height: auto;
-    background: #000;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(12, 18, 30, 0.96), rgba(31, 47, 64, 0.9));
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+  }
+
+  @media (max-width: 992px) {
+    .showcase-project-card {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 768px) {
     .showcase-summary {
       grid-template-columns: 1fr;
+    }
+
+    .showcase-project-card {
+      padding: 1rem;
     }
   }
 </style>
