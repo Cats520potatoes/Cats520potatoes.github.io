@@ -59,12 +59,24 @@ nav_order: 3
 
   {% for section in site.data.projects_showcase.sections %}
     <section class="showcase-section" id="{{ section.title | slugify }}">
-      <div class="showcase-section-heading">
-        <div>
+      <div class="showcase-section-panel">
+        <div class="showcase-section-heading">
+          <span class="showcase-section-topic">{{ section.topic }}</span>
           <h2 class="mb-1">{{ section.title }}</h2>
           <p class="text-muted mb-0">{{ section.description }}</p>
         </div>
-        <span class="showcase-section-count">{{ section.items.size }} 个项目视频</span>
+        <div class="showcase-section-aside">
+          <div class="showcase-section-focus">
+            <span class="showcase-section-label">研究焦点</span>
+            <p>{{ section.focus }}</p>
+          </div>
+          <div class="showcase-section-keywords">
+            {% for keyword in section.keywords %}
+              <span>{{ keyword }}</span>
+            {% endfor %}
+          </div>
+          <span class="showcase-section-count">{{ section.items.size }} 个项目视频</span>
+        </div>
       </div>
 
       <div class="showcase-project-list">
@@ -216,16 +228,99 @@ nav_order: 3
     margin-bottom: 2.4rem;
   }
 
+  .showcase-section-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.9fr);
+    gap: 1.2rem;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1rem;
+    border-radius: 22px;
+    border: 1px solid var(--projects-border);
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--projects-accent) 9%, var(--projects-surface) 91%),
+      var(--projects-surface)
+    );
+    box-shadow: var(--projects-shadow);
+  }
+
   .showcase-section-heading {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+
+  .showcase-section-topic {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    padding: 0.28rem 0.72rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--projects-accent) 12%, transparent);
+    color: var(--projects-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  .showcase-section-heading h2 {
+    margin-top: 0;
+  }
+
+  .showcase-section-aside {
+    display: grid;
+    gap: 0.75rem;
+    align-content: center;
+  }
+
+  .showcase-section-focus {
+    padding: 0.8rem 0.9rem;
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--projects-accent) 7%, transparent);
+    border: 1px solid color-mix(in srgb, var(--projects-accent) 16%, transparent);
+  }
+
+  .showcase-section-label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--projects-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .showcase-section-focus p {
+    margin-bottom: 0;
+    line-height: 1.68;
+  }
+
+  .showcase-section-keywords {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 0.45rem;
+  }
+
+  .showcase-section-keywords span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.22rem 0.65rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--global-text-color) 6%, transparent);
+    color: var(--projects-muted);
+    font-size: 0.8rem;
   }
 
   .showcase-section-count {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    padding: 0.3rem 0.72rem;
+    border-radius: 999px;
+    border: 1px solid var(--projects-border);
+    background: color-mix(in srgb, var(--projects-accent) 8%, transparent);
     color: var(--projects-muted);
     font-size: 0.92rem;
     white-space: nowrap;
@@ -352,6 +447,7 @@ nav_order: 3
   }
 
   @media (max-width: 992px) {
+    .showcase-section-panel,
     .showcase-project-card {
       grid-template-columns: 1fr;
     }

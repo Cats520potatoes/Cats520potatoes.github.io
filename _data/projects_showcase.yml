@@ -1,6 +1,9 @@
 sections:
   - title: 具身智能与操作演示
+    topic: 专题一 · 具身操作与任务执行
     description: 这一组主要展示我在具身智能、抓取任务执行和灵巧手重定向方向上的实践内容，重点关注“视频演示到机器人动作”的闭环。
+    focus: 关注从人类演示、VLA 任务链路到灵巧手执行的完整闭环，重点体现系统部署与任务执行能力。
+    keywords: [跨具身重定向, 双臂操作, 灵巧抓取, 部署联调]
     items:
       - title: LeRobot 操作链路搭建
         path: /assets/video/showcase/vla/lerobot-reproduction.mp4
@@ -76,7 +79,10 @@ sections:
         tags: [Retargeting, Dexterous Hand, Embodied AI]
 
   - title: 运动学与算法验证
+    topic: 专题二 · 运动学求解与底层算法
     description: 这一组更偏向基础算法和求解验证，用来展示我在运动学、逆解和系统建模方面的工程实现能力。
+    focus: 围绕逆运动学、姿态求解与执行稳定性，展示可支撑上层抓取与操作任务的底层模块能力。
+    keywords: [逆运动学, 高自由度手部, 轨迹跟踪, 求解稳定性]
     items:
       - title: 机械臂运动学逆解
         path: /assets/video/showcase/kinematics/manipulator-ik.mp4
@@ -96,7 +102,10 @@ sections:
         tags: [Retargeting, Dexterous Hand, Embodied AI]
 
   - title: 水下与链式机器人
+    topic: 专题三 · 特种机器人动力学
     description: 这一组集中展示我参与的链式机器人、水下机器人与复杂地形运动相关项目，体现机器人动力学建模与实机控制结合的工作方式。
+    focus: 聚焦多体系统建模、复杂环境中的运动控制，以及特种机器人在水下和复杂地形中的稳定性验证。
+    keywords: [AUV, 多体动力学, 特种机器人, 地形适应]
     items:
       - title: 水下机器人巡航
         path: /assets/video/showcase/underwater/underwater-robot-cruise.mp4
@@ -124,7 +133,10 @@ sections:
         tags: [Chain Robot, Gravel Terrain, Control]
 
   - title: 嵌入式与竞赛原型
+    topic: 专题四 · 嵌入式系统与快速原型
     description: 这一组以竞赛和原型开发为主，覆盖服务机器人、电赛题目和嵌入式装置实现，体现我在短周期原型落地中的执行能力。
+    focus: 展示短周期任务中从感知、控制到系统联调的快速落地能力，强调工程实现和原型验证效率。
+    keywords: [嵌入式控制, 视觉感知, 原型开发, 竞赛实现]
     items:
       - title: 家庭服务机器人接待演示
         path: /assets/video/showcase/embedded-competition/robocup-home-service-robot.mp4

@@ -7,14 +7,18 @@
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: color-mix(in srgb, var(--global-bg-color) 92%, transparent);
+  backdrop-filter: blur(18px);
+  opacity: 0.97;
 }
 
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
-  background-color: var(--global-bg-color);
+  background-color: color-mix(in srgb, var(--global-card-bg-color) 96%, transparent);
   border: 1px solid var(--global-divider-color);
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+  padding: 0.5rem;
 
   a:not(.active) {
     color: var(--global-text-color);
@@ -31,10 +35,11 @@
 
 .dropdown-item {
   color: var(--global-text-color);
+  border-radius: 10px;
 
   &:hover {
     color: var(--global-hover-color);
-    background-color: var(--global-bg-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
   }
 }
 
@@ -60,15 +65,26 @@
   }
 
   .navbar-nav .nav-item .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.72rem;
+    border-radius: 999px;
     color: var(--global-text-color);
+    transition:
+      color 0.18s ease,
+      background-color 0.18s ease,
+      box-shadow 0.18s ease;
 
     &:hover {
       color: var(--global-hover-color);
+      background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
-    background-color: inherit;
+    background-color: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+    box-shadow: 0 10px 24px color-mix(in srgb, var(--global-theme-color) 8%, transparent);
     font-weight: bolder;
     color: var(--global-theme-color);
 
@@ -124,6 +140,11 @@
 }
 
 .navbar-toggler {
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+
   .icon-bar {
     display: block;
     width: 22px;
@@ -165,8 +186,9 @@
 
 #light-toggle {
   padding: 0;
-  border: 0;
-  background-color: inherit;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background-color: color-mix(in srgb, var(--global-theme-color) 6%, transparent);
   color: var(--global-text-color);
   /* Fix footprint to prevent navbar shifting when icon changes */
   width: 2rem;
@@ -177,6 +199,8 @@
 
   &:hover {
     color: var(--global-hover-color);
+    border-color: color-mix(in srgb, var(--global-theme-color) 20%, transparent);
+    background-color: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
   }
 }
 
@@ -189,10 +213,47 @@
 #search-toggle {
   padding: 0;
   border: 0;
-  background-color: inherit;
+  background-color: transparent;
   color: var(--global-text-color);
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.72rem;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--global-theme-color) 6%, transparent);
+    color: var(--global-text-color);
+    transition:
+      color 0.18s ease,
+      background-color 0.18s ease,
+      border-color 0.18s ease;
+  }
 
   &:hover {
     color: var(--global-hover-color);
+
+    .nav-link {
+      color: var(--global-hover-color);
+      border-color: color-mix(in srgb, var(--global-theme-color) 20%, transparent);
+      background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  .navbar {
+    background-color: rgba(8, 17, 31, 0.9);
+  }
+
+  .navbar .dropdown-menu,
+  .btn-group.dropdown .dropdown-menu {
+    box-shadow: 0 22px 44px rgba(2, 8, 23, 0.45);
+  }
+
+  .navbar-toggler {
+    border-color: rgba(103, 232, 249, 0.16);
+    background: rgba(16, 33, 53, 0.84);
   }
 }

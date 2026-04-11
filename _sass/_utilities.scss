@@ -481,16 +481,46 @@ swiper-container {
 ninja-keys {
   --ninja-accent-color: var(--global-theme-color);
   --ninja-icon-size: 0px;
-  --ninja-modal-background: var(--global-bg-color);
+  --ninja-modal-background: color-mix(in srgb, var(--global-card-bg-color) 94%, transparent);
+  --ninja-secondary-background-color: color-mix(in srgb, var(--global-theme-color) 10%, var(--global-card-bg-color) 90%);
+  --ninja-secondary-text-color: var(--global-text-color-light);
+  --ninja-text-color: var(--global-text-color);
+  --ninja-selected-text-color: var(--global-text-color);
+  --ninja-selected-background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  --ninja-overflow-background: rgba(3, 8, 18, 0.38);
+  --ninja-modal-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+  --ninja-placeholder-color: var(--global-text-color-light);
+  --ninja-separate-border: 1px solid var(--global-divider-color);
+  --ninja-footer-background: color-mix(in srgb, var(--global-theme-color) 6%, transparent);
   --ninja-z-index: 1031;
 }
 
 ninja-keys::part(ninja-input) {
-  color: var(--ninja-selected-text-color);
+  color: var(--global-text-color);
 }
 
 ninja-keys::part(ninja-input-wrapper) {
-  background: var(--global-bg-color);
+  background: color-mix(in srgb, var(--global-theme-color) 6%, var(--global-card-bg-color) 94%);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+ninja-keys::part(ninja-actions-list) {
+  background: var(--ninja-modal-background);
+}
+
+ninja-keys::part(ninja-action) {
+  color: var(--global-text-color);
+}
+
+html[data-theme="dark"] ninja-keys {
+  --ninja-modal-background: rgba(10, 19, 33, 0.95);
+  --ninja-secondary-background-color: rgba(16, 33, 53, 0.92);
+  --ninja-secondary-text-color: #9fb3c8;
+  --ninja-text-color: #e5eef8;
+  --ninja-selected-text-color: #e5eef8;
+  --ninja-selected-background: rgba(103, 232, 249, 0.14);
+  --ninja-overflow-background: rgba(2, 8, 23, 0.62);
+  --ninja-modal-shadow: 0 28px 70px rgba(2, 8, 23, 0.5);
 }
 
 // Books shelf

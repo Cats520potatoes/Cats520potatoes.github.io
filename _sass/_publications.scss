@@ -300,8 +300,19 @@
 .bibsearch-form-input {
   min-height: 3.2rem;
   border-radius: 16px;
-  border-color: rgba(15, 23, 42, 0.18);
-  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
+  border-color: color-mix(in srgb, var(--global-theme-color) 24%, var(--global-divider-color) 76%);
+  background: color-mix(in srgb, var(--global-card-bg-color) 96%, transparent);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--global-theme-color) 8%, transparent);
+  color: var(--global-text-color);
+}
+
+.bibsearch-form-input::placeholder {
+  color: var(--global-text-color-light);
+}
+
+.bibsearch-form-input:focus {
+  border-color: color-mix(in srgb, var(--global-theme-color) 56%, transparent) !important;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--global-theme-color) 14%, transparent);
 }
 
 .citation,
