@@ -40,7 +40,7 @@ cv:
         highlights:
           - 负责运动学与动力学解算，搭建机器人 PD 前馈控制系统和 CPG 步态生成算法。
           - 使用 MATLAB 与 MuJoCo 完成仿真验证，搭建整体程序框架并完成电控软硬件实现。
-          - 相关成果覆盖 IROS、ISoIRS、CIAC、IJONAAOE、RAL 和 OE 等方向论文。
+          - 相关成果覆盖 IROS、ISoIRS、CIAC、IJNAOE、RAL 和 OE 等方向论文。
 
       - company: 轮式双臂人形机器人 VLA 部署
         position: 实习项目
@@ -73,7 +73,8 @@ cv:
       - bullet: 三次国家励志奖学金、两次特等学业奖学金、国奖候选人、校三好学生。
 
     Research Outputs:
-      - bullet: 发表或参与多篇机器人方向论文，覆盖 IROS、RAL、ISoIRS、CIAC、IJONAAOE、OE 等会议和期刊。
+      - bullet: 发表或参与多篇机器人方向论文，覆盖 IROS、RAL、ISoIRS、CIAC、IJNAOE、OE 等会议和期刊。
+      - bullet: 《Mathematical modelling and simulation of variable morphing multi-body AUVs for underwater structure maintenance》发表于 International Journal of Naval Architecture and Ocean Engineering。
       - bullet: 《Stability Enhancement in Variable Morphing Multi-body AUVs for Underwater Structure Maintenance》发表于 IROS 2025。
       - bullet: 《Modeling and Simulation of Horizontal Rotational Movements for a Tandem Multibody AUV Under Varied Thrust Configurations》发表于 ISoIRS 2024。
       - bullet: 《Developing a Pseudo-Rigid-Body Dynamics Model for Pneumatic Serpentine Robots》发表于 ISoIRS 2024。
