@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071520" />
+    <meta name="description" content="何原的机器人与具身智能演示简历" />
+    <title>何原 | 演示简历</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="viewer-bar">
+      <a class="viewer-brand" href="/" aria-label="返回何原个人主页">
+        <span class="brand-mark">HY</span>
+        <span class="brand-copy">
+          <strong>演示简历</strong>
+          <small>WEB PRESENTATION</small>
+        </span>
+      </a>
+
+      <div class="viewer-progress" aria-label="当前页码">
+        <span class="progress-current">01</span>
+        <span class="progress-rule"></span>
+        <span>01</span>
+      </div>
+
+      <div class="viewer-actions">
+        <span class="keyboard-hint">按 F 全屏</span>
+        <button class="icon-button" id="fullscreenButton" type="button" aria-label="进入全屏">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="deck-stage">
+      <section class="resume-slide" id="slide-01" aria-labelledby="slideTitle">
+        <div class="technical-grid" aria-hidden="true"></div>
+        <div class="scan-line" aria-hidden="true"></div>
+        <svg class="signal-line" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0 118 C130 118 178 115 248 116 C320 117 335 74 386 74 C430 74 442 126 500 126 C565 126 574 104 632 104 C690 104 702 32 772 32 C844 32 846 100 910 100 C974 100 1000 82 1060 82 C1110 82 1150 98 1200 98"
+          />
+        </svg>
+
+        <div class="slide-content">
+          <div class="intro-column">
+            <div class="eyebrow reveal-item">
+              <span class="eyebrow-index">01</span>
+              <span>PERSONAL INTRODUCTION</span>
+            </div>
+
+            <div class="title-group reveal-item">
+              <p class="title-overline">机器人学习 · 运动控制 · 实机系统</p>
+              <h1 id="slideTitle">何原</h1>
+              <p class="english-name">YUAN HE</p>
+            </div>
+
+            <div class="statement reveal-item">
+              <p class="statement-lead">具身智能与机器人系统研究者</p>
+              <p>关注从算法建模、策略学习到真实机器人部署的完整闭环。</p>
+            </div>
+
+            <div class="topic-list reveal-item" aria-label="研究方向">
+              <span>VLA 与灵巧操作</span>
+              <span>机器人动力学</span>
+              <span>运动规划与控制</span>
+              <span>真机系统部署</span>
+            </div>
+
+            <div class="identity-line reveal-item">
+              <div>
+                <small>EDUCATION</small>
+                <strong>北京化工大学（211）</strong>
+              </div>
+              <div>
+                <small>PROGRAM</small>
+                <strong>控制科学与工程 · 硕士</strong>
+              </div>
+            </div>
+          </div>
+
+          <aside class="profile-column reveal-item" aria-label="个人照片与学术亮点">
+            <div class="portrait-shell">
+              <div class="portrait-glow" aria-hidden="true"></div>
+              <div class="portrait-frame">
+                <img src="/assets/img/prof_pic.jpg" alt="何原个人照片" />
+              </div>
+              <div class="portrait-coordinate coordinate-top">39.9042° N</div>
+              <div class="portrait-coordinate coordinate-bottom">116.4074° E</div>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric-card">
+                <span>GPA</span>
+                <strong>3.73<small>/4.00</small></strong>
+              </div>
+              <div class="metric-card">
+                <span>RANK</span>
+                <strong>1<small>/65</small></strong>
+              </div>
+              <div class="metric-card metric-wide">
+                <span>PUBLICATIONS</span>
+                <strong>8<small>篇 · IROS / RA-L / OE</small></strong>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <footer class="slide-footer">
+          <span>cats520potatoes.github.io</span>
+          <span class="footer-status"><i></i> OPEN TO ROBOTICS &amp; EMBODIED AI</span>
+          <span>01 / 01</span>
+        </footer>
+      </section>
+    </main>
+
+    <footer class="viewer-footer">
+      <a href="/">返回个人主页</a>
+      <div class="viewer-nav" aria-label="幻灯片导航">
+        <button type="button" disabled aria-label="上一页">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+        </button>
+        <span>第一张原型</span>
+        <button type="button" disabled aria-label="下一页">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+        </button>
+      </div>
+      <span class="viewer-note">后续页面将接入同一套播放器</span>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
